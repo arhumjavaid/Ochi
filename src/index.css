@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@layer components {
+    .underline-effect {
+      @apply relative  p-0;
+    }
+
+    .underline-effect::after {
+        @apply content-[''] absolute w-full h-[2px] left-0 bottom-[-5px] bg-zinc-300 origin-bottom-right hover:origin-bottom-left scale-x-0 hover:scale-x-100 transition-transform duration-300;
+      }
+}
+@layer components {
+    .underline-effect-2 {
+      @apply relative p-0;
+    }
+
+    .underline-effect-2::after {
+        @apply content-[''] absolute w-[5vw] h-[1px] left-0 bottom-[-0.5px] bg-zinc-300 origin-bottom-right hover:origin-bottom-left scale-x-100 hover:scale-x-0 transition-transform duration-300;
+      }
+}
+
+@layer components {
+    .underline-effect-3 {
+      @apply relative p-0;
+    }
+
+    .underline-effect-3::after {
+        @apply content-[''] absolute w-[10vw] h-[1px] left-0 bottom-[-0.5px] bg-zinc-300 origin-bottom-right hover:origin-bottom-left scale-x-100 hover:scale-x-0 transition-transform duration-300;
+      }
+}
+@layer components {
+    .underline-effect-4 {
+      @apply relative p-0;
+    }
+
+    .underline-effect-4::after {
+        @apply content-[''] absolute w-[8vw] h-[1px] left-0 bottom-[-0.5px] bg-zinc-300 origin-bottom-right hover:origin-bottom-left scale-x-100 hover:scale-x-0 transition-transform duration-300;
+      }
+}
+@layer components {
+    .underline-effect-5 {
+      @apply relative p-0;
+    }
+
+    .underline-effect-5::after {
+        @apply content-[''] absolute w-[6vw] h-[1px] left-0 bottom-[-0.5px] bg-zinc-300 origin-bottom-right hover:origin-bottom-left scale-x-100 hover:scale-x-0 transition-transform duration-300;
+      }
+}
+@layer components {
+    .underline-effect-6 {
+      @apply relative p-0;
+    }
+
+    .underline-effect-6::after {
+        @apply content-[''] absolute w-[3.2vw] h-[1px] left-0 bottom-[-0.5px] bg-zinc-300 origin-bottom-right hover:origin-bottom-left scale-x-100 hover:scale-x-0 transition-transform duration-300;
+      }
+}
+@layer components {
+    .underline-effect-7 {
+      @apply relative p-0;
+    }
+
+    .underline-effect-7::after {
+        @apply content-[''] absolute w-[4vw] h-[1px] left-0 bottom-[-0.5px] bg-zinc-300 origin-bottom-right hover:origin-bottom-left scale-x-100 hover:scale-x-0 transition-transform duration-300;
+      }
+}
+@layer components {
+    .underline-effect-8 {
+      @apply relative p-0;
+    }
+
+    .underline-effect-8::after {
+        @apply content-[''] absolute w-[5.8vw] h-[1px] left-0 bottom-[-0.5px] bg-zinc-300 origin-bottom-right hover:origin-bottom-left scale-x-100 hover:scale-x-0 transition-transform duration-300;
+      }
+}
+
+.Start:hover .text-element, .Start:hover .arrow-element {
+  background-color: #3e3e3e;
+  color: white;
+  border-color: #3e3e3e;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  /* font-weight: 500; */
+}
+
