@@ -1,7 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { motion, useAnimation } from "framer-motion";
-
+import image1 from "../assets/Fyde_Illustration_Crypto_2-663x551.png";
+import image2 from "../assets/Vise_front2-663x551.jpg";
+import image3 from "../assets/Frame-481692-1-663x551.png";
+import image4 from "../assets/Frame-3875-663x551.jpg";
+import image5 from "../assets/PB-Front-4-663x551.png";
 const Featured = () => {
   const cards = [
     useAnimation(),
@@ -49,7 +53,7 @@ const Featured = () => {
           <div className="card overflow-hidden rounded-2xl transform transition-transform duration-[0.8s] hover:scale-[0.94]">
             <img
               className="w-full h-full object-cover transform transition-transform duration-[1.2s] hover:scale-[1.1]"
-              src="src/assets/Fyde_Illustration_Crypto_2-663x551.png"
+              src={`${image1}`}
               alt=""
             />
           </div>
@@ -79,7 +83,7 @@ const Featured = () => {
           <div className="card overflow-hidden rounded-2xl transform transition-transform duration-[0.8s] hover:scale-[0.94]">
             <img
               className="w-full h-full object-cover transform transition-transform duration-[1.2s] hover:scale-[1.1]"
-              src="src/assets/Vise_front2-663x551.jpg"
+              src={`${image2}`}
               alt=""
             />
           </div>
@@ -109,7 +113,7 @@ const Featured = () => {
           <div className="card overflow-hidden rounded-2xl transform transition-transform duration-[0.8s] hover:scale-[0.94]">
             <img
               className="w-full h-full object-cover transform transition-transform duration-[1.2s] hover:scale-[1.1]"
-              src="src/assets/Frame-481692-1-663x551.png"
+              src={`${image3}`}
               alt=""
             />
           </div>
@@ -140,7 +144,7 @@ const Featured = () => {
             <div className="card overflow-hidden rounded-2xl transform transition-transform duration-[0.8s] hover:scale-[0.94]">
               <img
                 className="w-full h-full object-cover transform transition-transform duration-[1.2s] hover:scale-[1.1]"
-                src="src/assets/Frame-3875-663x551.jpg"
+                src={`${image4}`}
                 alt=""
               />
             </div>
@@ -171,7 +175,7 @@ const Featured = () => {
           <div className="card overflow-hidden rounded-2xl transform transition-transform duration-[0.8s] hover:scale-[0.94]">
             <img
               className="w-full h-full object-cover transform transition-transform duration-[1.2s] hover:scale-[1.1]"
-              src="src/assets/PB-Front-4-663x551.png"
+              src={`${image5}`}
               alt=""
             />
           </div>

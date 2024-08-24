@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from "react";
-
+import image from "../assets/Top-Viewbbcbv-1-1440x921.jpg"
 const Eyes = () => {
 
     const [rotate, setRotate] = useState(0)
@@ -24,7 +24,7 @@ const Eyes = () => {
     })
   return (
     <div className="eyes w-full h-screen overflow-hidden">
-      <div data-scroll data-scroll-speed="-.9" className='relative w-full h-full bg-[url("C:\Users\Arhamm\OneDrive\Desktop\Reacts\Ochi\src\assets\Top-Viewbbcbv-1-1440x921.jpg")] bg-center bg-cover'>
+      <div data-scroll data-scroll-speed="-.9" style={{backgroundImage:`url(${image})`}} className='relative w-full h-full bg-center bg-cover'>
         <div className="absolute top-[40%] left-1/2 -translate-x-[50%] -translate-y-[50%] flex items-center justify-center gap-10">
           <div className="w-[15vw] h-[15vw] bg-zinc-100 rounded-full flex items-center justify-center">
             <div className="w-[60%] h-[60%] bg-zinc-900 rounded-full flex items-center justify-center relative">
