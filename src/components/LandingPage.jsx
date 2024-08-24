@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { HiOutlineArrowUpRight } from "react-icons/hi2";
-
+import image from "../assets/content-image01.jpg";
 const LandingPage = () => {
   return (
     <div data-scroll data-scroll-speed="-0.8" data-scroll-section className="w-full h-screen bg-zinc-800 pt-1">
@@ -17,7 +17,8 @@ const LandingPage = () => {
                     initial={{ width: "0" }}
                     animate={{ width: "8vw" }}
                     transition={{ ease: [0.76, 0, 0.24, 1], duration: 1.2 }}
-                    className="mr-[0.8vw] w-[8vw] h-[5.2vw] rounded-md relative -top-[1.1vw] bg-[url('src/assets/content-image01.jpg')] bg-cover"
+                    className={`mr-[0.8vw] w-[8vw] h-[5.2vw] rounded-md relative -top-[1.1vw] bg-cover`}
+                    style={{ backgroundImage: `url(${image})`}}
                   ></motion.div>
                 )}
                 <h1 className=" pt-[1vw] -mb-[1.2vw] text-[8vw] leading-[0.85]  uppercase font-['Founders_Grotesk_X'] font-[500]">

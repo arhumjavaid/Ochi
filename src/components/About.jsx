@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import { HiOutlineArrowUpRight } from "react-icons/hi2";
-
+import image from "../assets/Homepage-Photo-663x469.jpg"
 const About = () => {
   const [isHovered, setIsHovered] = useState(false);
   return (
@@ -45,8 +45,8 @@ const About = () => {
             </div>
           </button>
         </div>
-        <div
-          className={`w-1/2 h-[70vh] rounded-3xl bg-[url('src/assets/Homepage-Photo-663x469.jpg')] bg-cover ${
+        <div style={{ backgroundImage: `url(${image})`}}
+          className={`w-1/2 h-[70vh] rounded-3xl bg-cover ${
             isHovered &&
             "transform transition-transform scale-[0.94] duration-[1s] ease-linear"
           }`}
