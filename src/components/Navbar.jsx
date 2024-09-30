@@ -5,6 +5,7 @@ const Navbar = () => {
   return (
     <div className=" fixed z-[999] w-full px-20 py-8 font-['Neue_Montreal'] flex justify-between items-center ">
       <div className="logo">
+        <a href="#">
         <svg
           width="72"
           height="30"
@@ -33,14 +34,15 @@ const Navbar = () => {
             fill="currentColor"
           ></path>
         </svg>
+        </a>
       </div>
-      <div className="links flex gap-10 text-zinc-100">
+      <div className="links flex gap-8 text-zinc-100">
         {["Services", "Our work", "About us", "Insights", "Contact us"].map(
           (item, index) => (
             <a
               key={index}
               className={`underline-effect text-[1.125rem] font-[400] capitalize cursor-pointer transform hover:translate-y-[-10%] transition-transform duration-300 ${
-                index === 4 ? "ml-40" : ""
+                index === 4 ? "ml-80" : ""
               }`}
             >
               <span className="overflow-hidden block relative">
